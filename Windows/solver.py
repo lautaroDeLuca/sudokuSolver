@@ -10,7 +10,7 @@ pt.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'  
 def processImage():
     custom_config = r'--psm 6 -c tessedit_char_whitelist=123456789'
 
-    route = r'C:\Users\Gigabyte\Desktop\sudokuSolver-main\sudoku3.png'
+    route = r'sudoku3.png'
     image = cv2.imread(route)
     gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
     thresh = cv2.adaptiveThreshold(gray,255,cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY_INV,57,5)
